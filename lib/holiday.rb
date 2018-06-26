@@ -88,12 +88,12 @@ def clean_holiday_symbol(holiday)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-
+  # TODO it is definitely possible to do this without mutable state
   holidays_with_bbq = []
   holiday_hash.select do |season, season_data|
     season_data.select do |holiday, supplies|
       holidays_with_bbq << holiday if supplies.include?("BBQ")
     end
   end
-  holiday
+  holidays_with_bbq
 end
