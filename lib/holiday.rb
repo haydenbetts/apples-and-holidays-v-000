@@ -70,7 +70,7 @@ end
 def clean_holiday_symbol(holiday)
   holiday.to_s.split("_").map do |holiday_word|
     holiday_word.capitalize
-  end
+  end.join(" ")
 end
 
 def all_holidays_with_bbq(holiday_hash)
