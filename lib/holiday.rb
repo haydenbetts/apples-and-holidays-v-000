@@ -87,8 +87,6 @@ def clean_holiday_symbol(holiday)
   end.join(" ")
 end
 
-all_supplies_in_holidays(holiday_hash)
-
 def all_holidays_with_bbq(holiday_hash)
 
   holidays_with_bbq = []
@@ -97,4 +95,5 @@ def all_holidays_with_bbq(holiday_hash)
       holidays_with_bbq << holiday if supplies.include?("BBQ")
     end
   end
+  holiday
 end
