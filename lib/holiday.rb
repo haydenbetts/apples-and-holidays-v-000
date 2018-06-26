@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def clean_holiday_symbol(holiday)
-  holiday.to_s.split("_").map do |holiday_word|
+  holiday_cleaned = holiday.to_s.split("_").map do |holiday_word|
     holiday_word.capitalize
   end.join(" ")
 end
