@@ -64,7 +64,6 @@ def all_supplies_in_holidays(holiday_hash)
       puts "  #{holiday}: #{supplies.join(', ')}"
     end
   end
-  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
