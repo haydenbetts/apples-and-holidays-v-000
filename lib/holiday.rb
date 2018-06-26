@@ -45,7 +45,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 # if it does, index to it, and add
   current_holidays = holiday_hash.values.collect do |seasons_holidays, supplies|
     seasons_holidays.keys
-  end
+  end.flatten
   binding.pry
   return holiday_hash
 end
