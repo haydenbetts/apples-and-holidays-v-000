@@ -91,8 +91,8 @@ all_supplies_in_holidays(holiday_hash)
 
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.collect do |season, season_data|
-    season_data.collect do |holiday, supplies|
-      holiday if supplies.include?("BBQ")
+    season_data.select do |holiday, supplies|
+      supplies.include?("BBQ")
     end
   end
 end
