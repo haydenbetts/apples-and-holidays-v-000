@@ -43,10 +43,19 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 # check if your holiday already exists
 # if it does not, add it along with the supplies
 # if it does, index to it, and add
-  current_holidays = holiday_hash.values.collect do |seasons_holidays, supplies|
-    seasons_holidays.keys
-  end.flatten
-  binding.pry
+  # current_holidays = holiday_hash.values.collect do |seasons_holidays, supplies|
+  #   seasons_holidays.keys
+  # end.flatten
+  #
+  # if current_holidays.include?(holiday_name)
+  #   holiday_name
+  # else
+  #   holiday_hash[season][holiday_name] = supply_array
+  # end
+
+  holiday_hash[season][holiday_name] = supply_array
+
+
   return holiday_hash
 end
 
