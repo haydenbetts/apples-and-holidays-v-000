@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_upcase = season[0].upcase + season[1..-1]
     puts "#{season_upcase}:"
     season_data.each do |holiday, supplies|
-      puts "  #{clean_holiday_symbol(holiday)}: #{holiday_hash[season_data][holiday].join(', ')}"
+      puts "  #{clean_holiday_symbol(holiday)}: #{supplies.join(', ')}"
 
     end
   end
