@@ -60,6 +60,8 @@ def all_supplies_in_holidays(holiday_hash)
     binding.pry
     season_upcase = season[0].upcase + season[1..-1]
     puts "#{season_upcase}:"
+    binding.pry
+
     holiday_hash.values.each do |holiday, supplies|
       binding.pry
       puts "  #{holiday}: #{supplies.join(', ')}"
