@@ -143,7 +143,7 @@ TEXT
   # Helper method
 
   describe "#clean_holiday_symbol" do
-    it "should taken in :fourth_of_july and return 'Fourth Of July'" do
+    it.only "should taken in :fourth_of_july and return 'Fourth Of July'" do
       expect(clean_holiday_symbol(:fourth_of_july)).to eq("Fourth Of July")
     end
   end
