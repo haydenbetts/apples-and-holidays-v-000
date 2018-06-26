@@ -77,7 +77,6 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season_upcase}:"
     holiday_hash[season_data].keys.each do |holiday|
         puts "  #{clean_holiday_symbol(holiday)}: #{holiday_hash[season_data][holiday].join(', ')}"
-      end
     end
   end
 end
